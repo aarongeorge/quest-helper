@@ -360,6 +360,8 @@ public class ForgettableTale extends BasicQuestHelper
 		bucketOfWater2 = new ItemRequirement("Bucket of water", ItemID.BUCKET_OF_WATER, 2);
 		dibber = new ItemRequirement("Seed dibber", ItemID.SEED_DIBBER).isNotConsumed();
 		rake = new ItemRequirement("Rake", ItemID.RAKE).isNotConsumed();
+		rake.canBeObtainedDuringQuest();
+		rake.setTooltip("One spawns south of the hops patch in Keldagrim");
 		yeast = new ItemRequirement("Ale yeast", ItemID.ALE_YEAST);
 		kebab = new ItemRequirement("Kebab", ItemID.KEBAB);
 		kebab.setTooltip("You can buy one for 1 coin in the food shop northeast in Keldagrim");
